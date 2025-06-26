@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     database: "Todo",
-    password: "Raj@7016"
+    password: "your password"
 });
 
 app.set("view engine", "ejs");
