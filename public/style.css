@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 172, 172);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    height: 99.5vh;
+}
+
+.side_bar {
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    padding: 0.5%;
+    -background-color: white;
+}
+
+.logo {
+    margin: auto;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.logo h1 {
+    color: rgb(81, 10, 10);
+    font-size: 2rem;
+}
+
+.menu {
+    margin: auto;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 10% 2% 10% 2%;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 5%;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    font-size: 1.3rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(81, 10, 10);
+}
+
+.content {
+    width: 82%;
+    height: 100%;
+    background-color: rgb(230, 116, 116);
+}
+
+.main hr {
+    width: 0.5%;
+    margin: 2% 2% 2% 2%;
+    background-color: white;
+    border-style: none;
+    border-radius: 50%;
+}
+
+.content_main {
+    width: 97%;
+    height: 93%;
+    --border: 2px solid;
+    margin: 2.5% 0% 0% 0%;
+    overflow-y: auto;
+}
+
+.main_heading {
+    width: 90%;
+    margin: 1% auto 1% auto;
+    color: rgb(252, 210, 199);
+}
+
+.content_main hr {
+    width: 95%;
+    height: 0.5%;
+    margin: auto;
+}
+
+.content_main .task {
+    width: 95%;
+    border-bottom: 2px solid white;
+    margin: auto;
+}
+
+.task_work {
+
+    padding: 2%;
+    margin: 0px;
+}
+
+.task a {
+    display: inline-block;
+    background-color: rgb(245, 178, 140);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    color: white;
+}
+
+.form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .label {
+    margin: 5% auto 2% auto;
+    font-size: 1.3rem;
+    color: #fcd2c7;
+    font-weight: 500;
+}
+
+#task {
+    width: 70%;
+    height: 20%;
+    border: 5px solid #a32727;
+    border-radius: 20px;
+    padding: 2%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+.form button {
+    background-color: rgb(245, 178, 140);
+    border-radius: 4px;
+    color: white;
+    border-style: none;
+    padding: 1% 5%;
+    margin-top: 5%;
+}
+
+.task .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.task .task_date{
+  color:   rgb(252, 210, 199);
+}
+
+.task .delete {
+    background-color: rgb(224, 9, 9);
+    border-radius: 4px;
+    padding: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    color: white;
+    border-style: none;
+}
+
+.task .edit {
+    display: inline-block;
+    background-color: rgb(245, 178, 140);
+    border-radius: 4px;
+    border-style: none;
+    padding: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    color: white;
+}
+
+.form .Date {
+    border: 5px solid #a32727;
+    border-radius: 13px;
+    padding: 1%;
+    font-size: 1rem;
+    font-weight: 600;
+}
