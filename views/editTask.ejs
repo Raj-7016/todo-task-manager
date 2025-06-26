@@ -1,0 +1,23 @@
+<%- include ("master/head.ejs") %>
+
+        <div class="content">
+            <div class="content_main">
+                <h2 class="main_heading">Add The Task</h2>
+                <hr>
+                <form class="form" method="post" action="http://localhost:8080/edit/<%=task.id%>?_method=PATCH">
+                    <label class="label"  for="task">Update The Task Description</label>
+                    <textarea name="content" id="task" required><%=task.content%></textarea>
+                    <label class="label" style="margin-top: 3%;" for="Date">Date</label>
+                    <input class="Date" id="Date" name="Date" type="date">
+                    <button type="submit">UPDATE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let input = document.getElementById("Date");
+    input.value="<%=new Date(task.Task_date).toISOString().split("T")[0]%>";
+    console.log(input.value);
+</script>
+</html>

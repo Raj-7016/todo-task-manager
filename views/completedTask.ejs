@@ -1,0 +1,25 @@
+<%- include ("master/head.ejs") %>
+
+
+        <div class="content">
+            <div class="content_main">
+                <h2 class="main_heading">Completed Task List</h2>
+                <hr>
+                <% for (task of tasks) { %>
+                    <div class="task">
+                        <div class="inner">
+                            <p class="task_work"><%= task.content %>
+                            </p>
+                            <p class="task_date">
+                                <%=new Date(task.Task_date).toISOString().split("T")[0]%> 
+                            </p>
+                </div>
+                        <a href="http://localhost:8080/pending/<%=task.id%>">Pending</a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

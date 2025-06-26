@@ -1,0 +1,35 @@
+<%- include ("master/head.ejs") %>
+
+
+    <div class="content">
+        <div class="content_main">
+            <h2 class="main_heading">Please Click the completed button when the task is completed.</h2>
+            <hr>
+            <% for (task of tasks) { %>
+                <div class="task">
+                    <div class="inner">
+                    <p class="task_work">
+                        <%= task.content %>
+                    </p>
+                    <p class="task_date">
+                        <%=new Date(task.Task_date).toISOString().split("T")[0]%>
+                    </p>
+                    </div>
+                    <a href="http://localhost:8080/complete/<%=task.id%>">Completed</a>
+                    <form style="display: inline;" method="get"
+                        action="http://localhost:8080/edit/<%=task.id%>">
+                        <button type="submit" class="edit">Edit</button>
+                    </form>
+                    <form style="display: inline;" method="post"
+                        action="http://localhost:8080/pending/<%=task.id%>?_method=DELETE">
+                        <button type="submit" class="delete" >Delete</button>
+                    </form>
+                </div>
+                <% } %>
+
+        </div>
+    </div>
+    </div>
+    </body>
+
+    </html
